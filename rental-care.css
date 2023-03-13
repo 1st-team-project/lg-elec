@@ -1,5 +1,5 @@
-@import url('common.css');
-@import url('');
+@import url('css/common.css');
+@import url('css/header, footer.css');
 
 .wrap {
     width: 100%;
@@ -7,18 +7,24 @@
 }
 .tit-wrap {
     font-weight: 700;
-    font-size: 1.7em;
+    font-size: 32px;
     text-align: center;
-    padding-bottom: 40px;
+    margin: 3% 0;
 }
+
 .width-basic {
-    /* 전체 컨텐츠 가로길이 맞추고 가운데 정렬 */
-    width: 73%;
-    margin: 0 auto;
+    /* 가로길이 맞추고 가운데 정렬 */
+    width: 75%;
+    margin: 3% auto;
+    margin-bottom: 5%;
+}
+
+.boxsdw {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 15%);
 }
 /* care-flowbanner style */
 .wrap .care-flowbanner {
-    background: orange;
+    /* background: orange; */
 }
 .wrap .care-flowbanner .care-home-list li{
     position: relative;
@@ -44,7 +50,7 @@
 
 /* care-home-link style */
 .wrap .care-home-link {
-    background: gray;
+    /* background: gray; */
 }
 .wrap .care-home-link .care-home-menu {
     justify-content: space-between;
@@ -54,7 +60,81 @@
 .wrap .care-home-link .care-home-menu .care-home-list {
     width: 32%;
     height: 180px;
-    border: 1px solid white;
+    border-radius: 10px;
     padding: 30px;
+    background-color: #fff;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 15%); */
+    position: relative;
 }
-.wrap .care-home-link .care-home-menu .care-home-list 
+.wrap .care-home-link .care-home-menu .care-home-list:hover {
+    border: 2px solid #bb4069;
+}
+.wrap .care-home-link .care-home-menu .care-home-list span {
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, 0);
+}
+.wrap .care-home-link .care-home-menu .care-home-list .icon {
+
+}
+
+/* care-benefit style */
+
+/* care-plus style */
+.wrap .care-plus .care-plus-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .care-plus .care-plus-list {
+    width: 49%;
+    height: 234px;
+    border-radius: 10px;
+    background-color: #fff;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 15%); */
+    position: relative; 
+}
+.wrap .care-plus .care-plus-list .ab {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.wrap .care-plus .care-plus-list .care-plus-img {
+    left: 8%;
+}
+.wrap .care-plus .care-plus-list .care-plus-txt {
+    left: 25%;
+    font-size: 18px; 
+    line-height: 28px; 
+}
+.wrap .care-plus .care-plus-list .care-plus-txt h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 6px;
+}
+
+/* care-life style */
+.wrap .care-life-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .care-life-menu .care-life-list {
+    display: flex;
+    width: 32%;
+    position: relative;
+}
+.wrap .care-life-menu .care-life-list .care-life-txt {
+    position: absolute;
+    left: 20%;
+    line-height: 28px;
+}
+.wrap .care-life-menu .care-life-list .care-life-txt h2 {
+    top: 0%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}

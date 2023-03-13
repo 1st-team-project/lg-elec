@@ -56,6 +56,24 @@ header .inner-box div .gnb .normal {
 header .inner-box div .gnb .normal li {
     margin-right: 30px;
 }
+header .inner-box div .gnb .normal li:first-child {
+    width: 95.73px;
+}
+header .inner-box div .gnb .normal li:nth-child(2) {
+    width: 70.41px;
+}
+header .inner-box div .gnb .normal li:nth-child(3) {
+    width: 78.14px;
+}
+header .inner-box div .gnb .normal li:nth-child(4) {
+    width: 113.33px;
+}
+header .inner-box div .gnb .normal li:nth-child(5) {
+    width: 52.81px;
+}
+header .inner-box div .gnb .normal li:nth-child(6) {
+    width: 70.41px;
+}
 header .inner-box div .gnb .normal li a {
     display: block;
 }

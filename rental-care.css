@@ -115,8 +115,10 @@
     margin-top: 3px;
     font-weight: 700;
     font-size: 1.1em;
-    color: #868686;
     /* margin-left: 10px; */
+}
+.wrap .recommended .r-subtit>li>a{
+    color: #868686;
 }
 
 .wrap .recommended .r-subtit li:first-child {
@@ -129,7 +131,7 @@
     border-radius: 30px;
 }
 
-.wrap .recommended .r-subtit>li:hover {
+.wrap .recommended .r-subtit>li:hover >a{
     outline: 1px solid #000;
     color: #000;
 }

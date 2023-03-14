@@ -3,8 +3,9 @@
 
 .wrap {
     width: 100%;
-    font-family: 'Noto Sans',sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
+
 .tit-wrap {
     font-weight: 700;
     font-size: 32px;
@@ -20,25 +21,62 @@
 }
 
 .boxsdw {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 15%);
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 15%);
 }
+
+/* main style */
+.wrap .main {
+    /* background: orange; */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrap .main .main-img img {
+    width: 100%;
+}
+
+.wrap .main .main-img-txt {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    padding: 0 10%;
+    /* background: red; */
+}
+
+.wrap .main .main-img-txt h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-bottom: 16px;
+}
+
+.wrap .main .main-img-txt span {
+    font-size: 24px;
+    line-height: 32px;
+}
+
 /* care-flowbanner style */
 .wrap .care-flowbanner {
     /* background: orange; */
 }
-.wrap .care-flowbanner .care-home-list li{
+
+.wrap .care-flowbanner .care-home-flower li {
     position: relative;
-   display: inline-flex;
-   width: 24%;
-   margin-bottom: 30px;
+    display: inline-flex;
+    width: 24%;
+    margin-bottom: 30px;
 }
-.wrap .care-flowbanner .care-home-list img {
+
+.wrap .care-flowbanner .care-home-flower img {
     width: 70px;
 }
-.wrap .care-flowbanner .care-home-list a > * {
+
+.wrap .care-flowbanner .care-home-flower a>* {
     display: inline-block;
 }
-.wrap .care-flowbanner .care-home-list p {
+
+.wrap .care-flowbanner .care-home-flower p {
     position: absolute;
     top: 25px;
     left: 90px;
@@ -47,28 +85,53 @@
 }
 
 /* care-recommended style*/
+.wrap .recommended {
+    background: lightgray;
+}
+.wrap .recommended .r-wrap {
+    background: pink;
+}
+.wrap .recommended .r-subtit {
+    background: orange;
+    height: 600px;
+}
+.wrap .recommended .r-subtit > li {
+    display: inline-block;
+}
+.wrap .recommended
+
+
 
 /* care-home-link style */
 .wrap .care-home-link {
     /* background: gray; */
 }
+
 .wrap .care-home-link .care-home-menu {
     justify-content: space-between;
     display: flex;
     text-align: center;
 }
+
 .wrap .care-home-link .care-home-menu .care-home-list {
     width: 32%;
     height: 180px;
     border-radius: 10px;
-    padding: 30px;
     background-color: #fff;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, 15%); */
     position: relative;
 }
+
 .wrap .care-home-link .care-home-menu .care-home-list:hover {
-    border: 2px solid #bb4069;
+    outline: 2px solid #bb4069;
 }
+
+.wrap .care-home-link .care-home-menu .care-home-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .wrap .care-home-link .care-home-menu .care-home-list span {
     font-weight: 700;
     font-size: 24px;
@@ -76,40 +139,49 @@
     width: 100%;
     left: 50%;
     top: 65%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
 }
-.wrap .care-home-link .care-home-menu .care-home-list .icon {
 
+.wrap .care-home-link .care-home-menu .care-home-list .image {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* care-benefit style */
 
 /* care-plus style */
-.wrap .care-plus .care-plus-menu{
+.wrap .care-plus .care-plus-menu {
     display: flex;
     justify-content: space-between;
 }
+
 .wrap .care-plus .care-plus-list {
     width: 49%;
     height: 234px;
     border-radius: 10px;
     background-color: #fff;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, 15%); */
-    position: relative; 
+    position: relative;
 }
+
 .wrap .care-plus .care-plus-list .ab {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
 }
+
 .wrap .care-plus .care-plus-list .care-plus-img {
     left: 8%;
 }
+
 .wrap .care-plus .care-plus-list .care-plus-txt {
     left: 25%;
-    font-size: 18px; 
-    line-height: 28px; 
+    font-size: 18px;
+    line-height: 28px;
 }
+
 .wrap .care-plus .care-plus-list .care-plus-txt h2 {
     font-size: 28px;
     font-weight: 700;
@@ -122,16 +194,19 @@
     display: flex;
     justify-content: space-between;
 }
+
 .wrap .care-life-menu .care-life-list {
     display: flex;
     width: 32%;
     position: relative;
 }
+
 .wrap .care-life-menu .care-life-list .care-life-txt {
     position: absolute;
     left: 20%;
     line-height: 28px;
 }
+
 .wrap .care-life-menu .care-life-list .care-life-txt h2 {
     top: 0%;
     font-size: 18px;

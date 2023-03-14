@@ -86,21 +86,113 @@
 
 /* care-recommended style*/
 .wrap .recommended {
-    background: lightgray;
+    /* background: lightgray; */
 }
+
 .wrap .recommended .r-wrap {
-    background: pink;
+    width: 100%;
+    /* background: pink; */
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
+
 .wrap .recommended .r-subtit {
-    background: orange;
+    /* background: orange; */
+    width: 100%;
     height: 600px;
 }
-.wrap .recommended .r-subtit > li {
+
+.wrap .recommended .r-subtit>li {
     display: inline-block;
+    /* background: red; */
+    border-radius: 30px;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 1.1em;
+    /* margin-left: 10px; */
 }
+
+.wrap .recommended .r-subtit li:first-child {
+    margin-left: 25%;
+}
+
+.wrap .recommended .r-subtit>li .sb-txt {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.wrap .recommended .r-subtit>li:hover {
+    outline: 1px solid #000;
+}
+
+.wrap .recommended .r-subtit>li:hover .r-product {
+    display: block;
+}
+
 .wrap .recommended .r-subtit .r-product {
     display: none;
+    position: absolute;
+    top: 60px;
+    left: -320px;
 }
+
+.wrap .recommended .r-subtit .r-product .r-list {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.wrap .recommended .r-subtit .r-product .r-list .item {
+    background: white;
+    width: 380px;
+    height: 450px;
+    margin-right: 20px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 15%);
+    border-radius: 10px;
+    display: block;
+}
+
+.wrap .recommended .r-subtit .r-product .r-list .item img {
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.wrap .recommended .r-subtit .r-product .r-list .item .r-txt {
+    width: 80%;
+    margin: 30px auto 0;
+    line-height: 28px;
+}
+
+.wrap .recommended .r-subtit .r-product .r-list .item .r-txt h3 {
+    max-height: 56px;
+    font-size: 18px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.wrap .recommended .r-subtit .r-product .r-list .item .r-txt p {
+    margin: 2px 0 20px;
+    color: #666;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.wrap .recommended .r-subtit .r-product .r-list .item .r-txt span {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
 
 
 

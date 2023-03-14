@@ -264,4 +264,5 @@ footer .foot-container .fourth-foot-line div:nth-child(3) {
 /* footer 마지막 줄 */
 footer .foot-container > div:last-child {
     padding-bottom: 50px;
+    margin: 0;
 }

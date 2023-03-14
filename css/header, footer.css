@@ -120,18 +120,16 @@ header .inner-box div .gnb .normal .dropdown .dropdown-content {
     position: absolute;
     top: 134px;
     left: 0;
-    width: 100vw;
-    /* left: -80px; */
+    width: 100%;
 
     border-bottom: 1px solid #ddd;
-    
     
     line-height: 90px;
 }
 
 header .inner-box div .gnb .normal .dropdown:hover .dropdown-content {
     display: block;
-    z-index: 10;
+    z-index: 9999;
 }
 header .inner-box div .gnb .normal .dropdown:hover .dropdown-content .ablock{
     width: 96px;
@@ -145,19 +143,6 @@ header .inner-box div .gnb .normal .dropdown .dropdown-content a{
 header .inner-box div .gnb .normal .dropdown .dropdown-content a#selcetTV1{
     float: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 header .inner-box div .gnb .special {
     margin-bottom: 5px;
@@ -175,7 +160,40 @@ header .inner-box div .gnb .special li:last-child {
     margin-right: 0;
 }
 
-/* dropdown-menu 는 나중에 추가할 예정 */
+/* 
+    dropdown-menu 는 나중에 추가할 예정
+    언젠간......
+*/
+
+/* button.fixed style */
+.fixed {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.fixed i {
+    height: 100%;
+}
+.fixed.support {
+    color: #fff;
+    right: 50px;
+    bottom: 130px;
+
+    background: #f1596b;
+}
+.fixed.to-top {
+    right: 50px;
+    bottom: 50px;
+    box-shadow: 0 0 20px #aaa;
+}
 
 /* footer style */
 footer {

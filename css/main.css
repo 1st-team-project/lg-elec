@@ -352,7 +352,7 @@ section .title p {
 /* section.smart style */
 .smart {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 .smart .title {
     display: flex;
@@ -395,3 +395,17 @@ section .title p {
     flex-direction: column;
 }
 
+.smart .card-list ul li {
+    width: 30%;
+}
+.smart .card-list ul li div {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* section.guide style */
+.guide {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+}

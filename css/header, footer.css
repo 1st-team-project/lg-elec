@@ -97,11 +97,9 @@ header .inner-box div .gnb .normal li>* {
 
 
 
-
-
 header .inner-box div .gnb .normal .dropdown {
     display: inline-block;
-    position: relative;
+    /* position: relative; */
 }
 
 header .inner-box div .gnb .normal .dropdown:hover {
@@ -109,15 +107,21 @@ header .inner-box div .gnb .normal .dropdown:hover {
     border-bottom: 5px solid #000;
 }
 
+
+
+header {
+    position: relative;
+}
 header .inner-box div .gnb .normal .dropdown .dropdown-content {
     display: none;
     height: 90px;
     background: white;
     
     position: absolute;
-    top: 64px;
+    top: 134px;
+    left: 0;
     width: 100vw;
-    left: -80px;
+    /* left: -80px; */
 
     border-bottom: 1px solid #ddd;
     

@@ -98,7 +98,9 @@
 .wrap .recommended .r-subtit > li {
     display: inline-block;
 }
-.wrap .recommended
+.wrap .recommended .r-subtit .r-product {
+    display: none;
+}
 
 
 

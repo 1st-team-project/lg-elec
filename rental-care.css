@@ -115,6 +115,7 @@
     margin-top: 3px;
     font-weight: 700;
     font-size: 1.1em;
+    color: #868686;
     /* margin-left: 10px; */
 }
 
@@ -130,6 +131,7 @@
 
 .wrap .recommended .r-subtit>li:hover {
     outline: 1px solid #000;
+    color: #000;
 }
 
 .wrap .recommended .r-subtit>li:hover .r-product {

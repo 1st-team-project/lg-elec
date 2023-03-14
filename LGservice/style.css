@@ -1,4 +1,4 @@
-@import url('common.css');
+@import url('../css/common.css');
 
 /* ----------- 공통 ------------ */
 .wrap {
@@ -9,7 +9,6 @@
   font-weight: 700;
   /* font-family: 'Noto Sans',sans-serif; */
 }
-
 h2 {
   text-align: center;
   font-size: 32px;

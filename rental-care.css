@@ -60,6 +60,10 @@
 .wrap .care-flowbanner {
     /* background: orange; */
 }
+.wrap .care-flowbanner .care-home-flower {
+    /* background: pink; */
+    padding-left: 3%;
+}
 
 .wrap .care-flowbanner .care-home-flower li {
     position: relative;

@@ -8,7 +8,7 @@
     <title>LGE.COM | LG전자</title>
     <link rel="stylesheet" href="/css/Tv.css">
     <link rel="stylesheet" href="/css/header, footer.css">
-    
+
     <!-- fontawesome css: https://fontawesome.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
@@ -55,8 +55,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="dropdown client"><a
-                                    href="/LGservice/고객지원.html">고객지원</a>
+                            <div class="dropdown client"><a href="/LGservice/고객지원.html">고객지원</a>
                                 <div class="dropdown-content clearfix">
                                     <div class="ablock">
                                         <a href="/LGservice/고객지원.html" id="selcetTV1">고객지원</a>
@@ -87,7 +86,7 @@
 
     <!-- ================================================ header 종료 -->
     <button class="fixed support"><i class="fas fa-headset"></i></button>
-        <button class="fixed to-top"><i class="fas fa-arrow-up"></i></button>
+    <button class="fixed to-top"><i class="fas fa-arrow-up"></i></button>
     <!-- ================================================ container 시작 -->
 
     <section class="main clearfix">
@@ -402,7 +401,16 @@
     </footer>
 
     <!-- ================================================== footer 종료 -->
+    <script>
+        const $topBtn = document.querySelector(".to-top");
 
+        $topBtn.onclick = (e) => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
 </body>
 
 </html>

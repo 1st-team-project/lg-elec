@@ -105,10 +105,14 @@ header .inner-box div .gnb .special li:last-child {
 footer {
     background: #f4f4f4;
     font-size: 0.8em;
+    line-height: 1.4;
 }
 footer .foot-container {
     width: 1270px;
     margin: 0 auto;
+}
+footer .foot-container > div {
+    margin-bottom: 0.8em;
 }
 /* footer 첫째 줄 */
 footer .foot-container .first-foot-line {
@@ -134,7 +138,7 @@ footer .foot-container .first-foot-line .lang::after {
     width: 1em;
     height: 1em;
     position: absolute;
-    right: 0;
+    right: -5px;
 }
 footer .foot-container .first-foot-line nav ul {
     display: flex;
@@ -214,8 +218,50 @@ footer .foot-container .first-foot-line nav ul li:nth-child(6) a::before {
 /* footer 둘째 줄 */
 footer .foot-container .second-foot-line nav ul {
     display: flex;
-    padding: 16px 0;
 }
 footer .foot-container .second-foot-line nav ul li {
     margin-right: 10px;
+}
+footer .foot-container .second-foot-line nav ul li .bold {
+    font-weight: 700;
+}
+footer .foot-container .second-foot-line nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* footer 셋째 줄 이후 공통 */
+footer .foot-container div:nth-child(n + 3) {
+    display: flex;
+    color: #888;
+}
+
+/* footer 셋째 줄 */
+footer .foot-container .third-foot-line div {
+    padding: 0 10px;
+    border-right: 1px solid #bbb;
+}
+footer .foot-container .third-foot-line div:first-child {
+    padding-left: 0;
+}
+footer .foot-container .third-foot-line div:last-child {
+    border: none;
+}
+footer .foot-container .third-foot-line span {
+    color:#000;
+}
+
+/* footer 넷째 줄 */
+footer .foot-container .fourth-foot-line div {
+    margin-right: 15px;
+}
+footer .foot-container .fourth-foot-line div:nth-child(3) {
+    background: #888;
+    color: #f4f4f4;
+    font-weight: 700;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+/* footer 마지막 줄 */
+footer .foot-container > div:last-child {
+    padding-bottom: 50px;
 }

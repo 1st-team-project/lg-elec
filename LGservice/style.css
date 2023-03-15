@@ -309,6 +309,9 @@ main .input .reservation .title .but-mini {
   padding: 6px 8px;
   float: right;
 }
+main .input .reservation .check {
+  display: flex;
+}
 main .input .reservation .name {
   float: left;
 }

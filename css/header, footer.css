@@ -178,6 +178,7 @@ header .inner-box div .gnb .special li:last-child {
     text-align: center;
 
     cursor: pointer;
+    z-index: 9999;
 }
 .fixed i {
     height: 100%;

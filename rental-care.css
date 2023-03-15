@@ -270,11 +270,90 @@
 
 /* care-benefit style */
 .wrap .care-benefit {
-    background: lightgray;
+    /* background: lightgray; */
+    height: 700px;
+    position: relative;
+}
+.wrap .care-benefit .b-menu {
+    /* background: pink; */
 }
 .wrap .care-benefit .b-menu > li {
-    
+    display: inline-block;
+    color: #868686;
 }
+.wrap .care-benefit .b-menu > li a {
+    /* background: white; */
+    margin: 10px;
+    padding: 5px 0;
+}
+.wrap .care-benefit .b-menu .b-menu-a {
+    font-size: 17px;
+}
+.wrap .care-benefit .b-menu > li .b-menu-a1 {
+    margin-left: 535px;
+}
+.wrap .care-benefit .b-menu li:hover .b-menu-a {
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+.wrap .care-benefit .b-menu li:hover .b-product {
+    /* display: flex; */
+}
+.wrap .care-benefit .b-menu .b-product {
+    display: flex;
+    /* display: none; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    /* background: gray; */
+    position: absolute;
+    top: 102px;
+    left: 0;
+    padding-top: 20px;
+}
+.wrap .care-benefit .b-menu .b-product .b-list {
+    display: block;
+    width: 49%;   
+    /* background: violet; */
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con {
+    padding: 10px 0;
+    height: 140px;
+    border-bottom: 1px solid #d6d6d6;
+    position: relative;
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con .b-txt {
+    position: absolute;
+    top: 15px;
+    left: 170px;
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con .b-txt > *{
+    padding-right: 40px;
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 5px 0;
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con .sub {
+    width: 500px;
+    list-style-type: disc;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
 
 
 

@@ -10,6 +10,7 @@
   font-weight: 700;
   /* font-family: 'Noto Sans',sans-serif; */
 }
+
 h2 {
   text-align: center;
   font-size: 32px;
@@ -28,8 +29,9 @@ h3 {
 
 .button {
   border-radius: 50px;
+  border: none;
   padding: 10px 30px;
-  background: palevioletred;
+  background: #fa263e;
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -97,6 +99,7 @@ h3 {
 
   margin-top: 26px;
 }
+
 .slide .notice .new .news {
   font-size: 15px;
   padding: 2px 10px;
@@ -115,7 +118,7 @@ main {
 }
 
 main>* {
-  margin: 50px 0 50px;
+  margin: 100px 0 50px;
 }
 
 /* search */
@@ -205,28 +208,15 @@ main section ul li a::after {
 
 
 /* recommend */
-main .recommend {
-  /* background: rgba(240, 128, 128, 0.253); */
-}
-
-main .recommend form.sub .check input {
+main .recommend form.sub .checkbox {
   float: left;
-}
-
-/* .check input label::after {
-  background-image: url("https://www.lge.co.kr/lg5-common/images/icons/btn-checkbox-off-48.svg");
-}
-
-.check input label::after {
-  content: ' ';
-  position: absolute;
-  top: 1px;
-  left: 0;
-  width: 24px;
+  background: url('https://www.lge.co.kr/lg5-common/images/icons/btn-checkbox-off-48.svg') no-repeat;
+  background-size: contain;
+  padding: 0 30px;
   height: 24px;
-  background: no-repeat center center;
-  background-size: 100%;
-} */
+  line-height: 24px;
+  cursor: pointer;
+}
 
 main .recommend form.sub .button {
   float: right;
@@ -235,7 +225,7 @@ main .recommend form.sub .button {
 main .recommend .button {
   background: none;
   color: black;
-  border-width: 1px;
+  border: 1px solid black;
 }
 
 main .recommend .boxes {
@@ -245,15 +235,45 @@ main .recommend .boxes {
 }
 
 main .recommend .boxes>.box {
-  /* width: 30%; */
-  height: 200px;
-
   float: left;
   /* * */
   margin: 0 10px;
 
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 15%);
   padding: 30px;
+}
+
+main .recommend .boxes .box .top-nav .img-box {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #F4F4F4;
+  border-radius: 50%;
+  /* position: relative; */
+}
+
+main .recommend .boxes .box .top-nav .img-box img {
+  /* background: lightcoral; */
+  width: 90%;
+  height: 90%;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .recommend .boxes .box .top-nav span {
+  position: relative;
+  top: -10px;
+}
+main .recommend .boxes .box .title {
+  margin:15px 0 ;
+}
+
+main .recommend .boxes .box .sub-nav{
+  margin: 10px 0;
+  font-size: 14px;
 }
 
 /* -- end recommend */
@@ -263,26 +283,33 @@ main .recommend .boxes>.box {
 /* input 입력창 */
 main .input>* {
   background: rgb(238, 238, 238);
-  padding: 50px;
   float: left;
   width: 49%;
 }
+
 main .input {
   display: flex;
   justify-content: space-between;
 }
+
+main .input .input-main {
+  margin: 50px;
+  /* background: #ce75755b; */
+}
+
 /* -------공통-------- */
 main .input .title {
   /* background-color: lightpink; */
   border-bottom: 2px solid black;
 }
+
 main .input .title h2 {
   margin-bottom: 0px;
 }
 
-main .input input {
+main .input input.text-window{
   display: block;
-  width: 280px;
+  width: 100%;
   height: 45px;
   font-size: 15px;
   border: 1px solid lightgray;
@@ -291,37 +318,112 @@ main .input input {
   padding-left: 10px;
   background-color: white;
 }
+
 main .input .title h2 {
   font-size: 28px;
   float: left;
   padding-bottom: 10px;
 }
+
 main .input label {
   /* background: lightseagreen; */
   display: block;
   margin-top: 30px;
 }
 
-/* reservation */
+main .input .but-box {
+  /* margin: 50px; */
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .input .input-main form label {
+  padding-bottom: 10px;
+}
+
+/* -----------------reservation */
+main .input .reservation {
+  position: relative;
+  /* 예약, 결과 같은 클래스라 크기가 더 큰 예약에 bottom 패딩 줘서 공간 만듦 */
+  padding-bottom: 80px;
+}
+
 main .input .reservation .title .but-mini {
   background-color: black;
   font-size: 14px;
   padding: 6px 8px;
   float: right;
 }
+
 main .input .reservation .check {
   display: flex;
-}
-main .input .reservation .name {
-  float: left;
-}
-main .input .reservation .phone {
-  float: right;
-}
-main .input .reservation .addr {
-  display: inline-block;
+  line-height: 24px;
+  padding-top: 20px;
 }
 
+main .input .reservation .check:hover {
+  /* background-color: tomato; */
+  cursor: pointer;
+}
+
+main .input .reservation .check .agree {
+  background: url('https://www.lge.co.kr/lg5-common/images/icons/btn-checkbox-off-48.svg') no-repeat;
+  background-size: contain;
+  padding: 0 30px;
+  height: 24px;
+}
+
+main .input .reservation .check a {
+  text-decoration: underline;
+}
+
+main .input .reservation .check a span {
+  text-decoration: none;
+}
+
+main .input .reservation .addr input {
+  background-color: #E4E4E4;
+}
+
+main .input .reservation .addr .top {
+  display: flex;
+}
+
+main .input .reservation .addr .top .addr-num {
+  flex: 1;
+}
+
+main .input .reservation .addr .top .addr-addr {
+  flex: 5;
+}
+
+main .input .reservation .addr .top input {
+  margin-right: 1%;
+}
+
+main .input .reservation .addr .top .addr-search {
+  background: none;
+  color: black;
+  border-radius: 10px;
+  flex: 1;
+}
+
+main .input .reservation .addr .addr-detail {
+  margin-top: 1%;
+}
+
+/* ----------------result   */
+main .input .result {
+  position: relative;
+}
+main .input .result .input-main .radio form {
+  display: flex;
+}
+main .input .result .input-main .radio form label {
+margin-right: 20px;
+}
 /* --end input 입력창 */
 
 

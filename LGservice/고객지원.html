@@ -165,28 +165,44 @@
         <h2>추천하는 콘텐츠에요.</h2>
 
         <form class="sub clearfix">
-          <span class="check">
-            <input type="checkbox" id="chackbox">
-            <label for="checkbox">보유제품 기준</label>
-          </span>
+          <div class="checkbox">보유제품 기준</div>
           <button class="button">제품 문제해결 ></button>
         </form>
 
         <div class="boxes radius">
           <div class="box1 box">
+            <div class="top-nav">
+              <div class="img-box">
+                <img src="https://www.lge.co.kr/kr/support/images/category-images/cate_icon_it-monitors.svg" alt="컴퓨터">
+              </div>
+              <span>노트북/탭북</span>
+            </div>
             <h3 class="title">[LG 노트북] LG Update Center 프로그램 대해 알고 싶어요</h3>
-            <div class="nav"></div>
-            <div class="nav"></div>
+            <div class="sub-nav">⦁ IT/모니터>노트북/탭북</div>
+            <div class="sub-nav">⦁ 프로그램>LG전자 번들 프로그램</div>
           </div>
           <div class="box2 box">
+            <div class="top-nav">
+              <div class="img-box">
+                <img src="https://www.lge.co.kr/kr/support/images/category-images/cate_icon_washers-dryers.svg"
+                  alt="세탁기">
+              </div>
+              <span>드럼 세탁기</span>
+            </div>
             <h3 class="title">[LG 드럼세탁기 에러코드] IE(급수 안됨) 에러가 떠요</h3>
-            <div class="nav"></div>
-            <div class="nav"></div>
+            <div class="sub-nav">⦁ 세탁기/스타일러>드럼 세탁기</div>
+            <div class="sub-nav">⦁ 에러/표시창>IE(급수 안됨) 에러</div>
           </div>
           <div class="box3 box">
+            <div class="top-nav">
+              <div class="img-box">
+                <img src="https://www.lge.co.kr/kr/support/images/category-images/cate_icon_refrigerator.svg" alt="냉장고">
+              </div>
+              <span>양문형 냉장고</span>
+            </div>
             <h3 class="title">[LG 냉장고] 전면이나 옆면이 뜨겁고 열이 많이 발생해요.</h3>
-            <div class="nav"></div>
-            <div class="nav"></div>
+            <div class="sub-nav">⦁ 냉장/냉동고>양문형 냉장고</div>
+            <div class="sub-nav">⦁ 구조/외관>냉장고 전면/옆면이 뜨거움</div>
           </div>
         </div>
         <div class="more">
@@ -198,47 +214,61 @@
       <div class="input clearfix radius">
         <!-- reservation 출장 서비스 예약 -->
         <div class="reservation">
-          <div class="title clearfix">
-            <h2>출장 서비스 예약</h2>
-            <button class="button but-mini">이전 설치 예약/조회</button>
+          <div class="input-main">
+            <div class="title clearfix">
+              <h2>출장 서비스 예약</h2>
+              <button class="button but-mini">이전 설치 예약/조회</button>
+            </div>
+            <div class="check">
+              <div class="agree">개인정보 수집 및 이용 동의</div>
+              <div class="more"><a>전문보기</a><span> ></span></div>
+            </div>
+            <form class="">
+              <label class="name" for="name">이름</label>
+              <input type="text" class="text-window" id="name" placeholder="이름 입력">
+              <label class="phone" for="phone">휴대폰번호</label>
+              <input type="text" class="text-window" id="phone" placeholder="휴대폰번호 입력">
+
+              <label for="addr">주소</label>
+              <div class="addr">
+                <div class="top" id="addr">
+                  <input type="text" class="addr-num text-window" placeholder="우편번호">
+                  <input type="text" class="addr-addr text-window" placeholder="주소">
+                  <button type="button" class="addr-search">주소찾기</button>
+                </div>
+                <input type="text" class="addr-detail text-window" placeholder="단독주택 등일 경우 층수 또는 호수 등을 입력 하세요">
+              </div>
+            </form>
           </div>
-          <div class="check">
-            <div class="agree">개인정보 수집 및 이용 동의</div>
-            <div class="more"><a>전문보기</a></div>
+          <div class="but-box">
+            <button class="button bottom">예약하기</button>
           </div>
-          <form class="clearfix">
-            <label class="name">이름
-              <input type="text">
-            </label>
-            <label class="phone">휴대폰번호
-              <input type="text">
-            </label>
-
-            <label class="addr">주소
-              <input type="text">
-            </label>
-          </form>
-
-          <button class="button">예약하기</button>
-
         </div>
 
         <!-- result 결과 조회 -->
         <div class="result">
-          <div class="title clearfix">
-            <h2>문의/예약 결과조회</h2>
+          <div class="input-main">
+            <div class="title clearfix">
+              <h2>문의/예약 결과조회</h2>
+            </div>
+            <div class="radio">
+              <form>
+                <label for=""><input type="radio" name="way">접수번호</label>
+                <label for=""><input type="radio" name="way">휴대전화 인증</label>
+              </form>
+            </div>
+            <form>
+              <label class="name" for="name">이름</label>
+              <input type="text" class="text-window" id="name" placeholder="이름 입력">
+
+              <label class="number" for="number">접수번호</label>
+              <input type="text" class="text-window" id="number" placeholder="접수번호 입력">
+
+            </form>
           </div>
-          <radio></radio>
-          <radio></radio>
-          <form>
-            <label class="name">이름
-              <input type="text">
-            </label>
-            <label class="name">접수번호
-              <input type="text">
-            </label>
-          </form>
-          <button class="button">조회하기</button>
+          <div class="but-box">
+            <button class="button bottom">조회하기</button>
+          </div>
         </div>
       </div>
 

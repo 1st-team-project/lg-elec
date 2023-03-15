@@ -271,7 +271,7 @@
 /* care-benefit style */
 .wrap .care-benefit {
     /* background: lightgray; */
-    height: 700px;
+    height: 550px;
     position: relative;
 }
 .wrap .care-benefit .b-menu {
@@ -279,12 +279,13 @@
 }
 .wrap .care-benefit .b-menu > li {
     display: inline-block;
-    color: #868686;
+    
 }
 .wrap .care-benefit .b-menu > li a {
-    /* background: white; */
+    /* background: red; */
     margin: 10px;
     padding: 5px 0;
+    color: #868686;
 }
 .wrap .care-benefit .b-menu .b-menu-a {
     font-size: 17px;
@@ -296,13 +297,16 @@
     border-bottom: 2px solid #000;
     color: #000;
 }
-
+.wrap .care-benefit .b-menu ul.b-product.b-first {
+    display: flex;
+}
 .wrap .care-benefit .b-menu li:hover .b-product {
-    /* display: flex; */
+    display: flex;
+    background-color: #fff;
 }
 .wrap .care-benefit .b-menu .b-product {
-    display: flex;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
@@ -322,6 +326,9 @@
     height: 140px;
     border-bottom: 1px solid #d6d6d6;
     position: relative;
+}
+.wrap .care-benefit .b-menu .b-product .b-list .b-con.not-border {
+    border-bottom: 0;
 }
 .wrap .care-benefit .b-menu .b-product .b-list .b-con img {
     position: absolute;
@@ -352,6 +359,16 @@
     font-size: 14px;
     line-height: 24px;
     padding-left: 20px;
+}
+
+.wrap .care-benefit .b-menu .b-product .b-list .b-con .sub.plusbt {
+    width: fit-content;
+    display: block;
+    margin: 10px 0;
+    padding: 3px 10px;
+    border-radius: 20px;
+    outline: 1px solid #000;
+    color: #000;
 }
 
 

@@ -167,7 +167,7 @@
     background: white;
 }
 .wrap .recommended .r-subtit .r-product .r-list3 {
-    padding: 10px 300px
+    padding: 10px 300px 20px;
 }
 
 .wrap .recommended .r-subtit .r-product .r-list .item {
@@ -269,6 +269,15 @@
 }
 
 /* care-benefit style */
+.wrap .care-benefit {
+    background: lightgray;
+}
+.wrap .care-benefit .b-menu > li {
+    
+}
+
+
+
 
 /* care-plus style */
 .wrap .care-plus .care-plus-menu {
